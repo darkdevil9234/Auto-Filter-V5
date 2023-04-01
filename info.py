@@ -29,7 +29,7 @@ NEWGRP = environ.get("NEWGRP", "https://graph.org/file/60e45238f767fc946c323.jpg
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5007198306').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001782414786').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '5007198306').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
@@ -44,18 +44,18 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 # Channel Button Links
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Cinemaa_boxoffice_support')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Cinemaa_Boxoffice')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/cynitesupport')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/Shazam_bot_support')
 MSG_ALRT = environ.get('MSG_ALRT', 'Share and Support Us')
 
 # Custom Chats
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001502366282))
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', -1001782414786))
 FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 't.me/cinemaa_boxoffice')
-HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/cinemaa_must_hai')
+HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/Shazam_bot_support')
 
 # Log Channels
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001801471389))
-RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', -1001801471389))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', --1001852087793))
+RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', -1001852087793))
 
 # Bot Options
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
@@ -85,7 +85,7 @@ SPL_DELETE_TIME = int(environ.get('SPL_DELETE_TIME', 15))
 
 # URL SHORTNER
 
-URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'tnlik.link')
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'tnlink.in')
 URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '811e36e9822b8c445582837748258bc00f7c6117')
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
