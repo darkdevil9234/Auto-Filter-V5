@@ -686,7 +686,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 reply_markup=reply_markup,
                 parse_mode=enums.ParseMode.HTML
             )
-    elif query.data == "cynite_filstr":
+    elif query.data == "cinemaa_boxoffice":
             filbtn = [[
                        InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="help")
                      ]]
