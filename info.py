@@ -22,7 +22,7 @@ CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 PICS = (environ.get('PICS', 'https://graph.org/file/68c82c75495bdd0d58931.jpg')).split()
-NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/c2d618fc2a53b84404caa.jpg")
+NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/b5aab72226185cfcdf309.jpg")
 SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/7603a36afc9c21b710fd9.jpg")
 NEWGRP = environ.get("NEWGRP", "https://graph.org/file/60e45238f767fc946c323.jpg")
 
@@ -37,7 +37,7 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Daredevil9234:password1234@cluster0.w5ypctq.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://dare12426:password1234@cluster0.xqxqbm7.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cinemaa_boxofficeBot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
@@ -54,8 +54,8 @@ FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 't.me/cinemaa_boxoffice')
 HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/Shazam_bot_support')
 
 # Log Channels
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', --1001852087793))
-RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', -1001852087793))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001975890174))
+RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', -1001975890174))
 
 # Bot Options
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
