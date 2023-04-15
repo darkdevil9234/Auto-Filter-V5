@@ -23,7 +23,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 PICS = (environ.get('PICS', 'https://graph.org/file/68c82c75495bdd0d58931.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/b5aab72226185cfcdf309.jpg")
-SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/7603a36afc9c21b710fd9.jpg")
+SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/31862d2013a79f1f48e0b.jpg")
 NEWGRP = environ.get("NEWGRP", "https://graph.org/file/60e45238f767fc946c323.jpg")
 
 # Admins, Channels & Users
@@ -37,7 +37,7 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Darkdevil:password1234@cluster0.bqbjh3t.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Darkdevil12:password1234@cluster0.qieo0l1.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cinemaa_boxofficeBot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
