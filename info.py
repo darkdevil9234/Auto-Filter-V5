@@ -13,9 +13,9 @@ def is_enabled(value, default):
 # Bot information
 PORT = environ.get("PORT", "8080")
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '11970745'))
-API_HASH = environ.get('API_HASH', '095d152ad4d8cc7cf912bb142cbceed0')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6205697935:AAG5xGPauKw9JAcOCl711IRi4IIKy9e5C3A")
+API_ID = int(environ.get('API_ID', '23237371'))
+API_HASH = environ.get('API_HASH', 'd7d08655fe257aa982dda9eb0fd96e7a')
+BOT_TOKEN = environ.get('BOT_TOKEN', "5935949284:AAFrI-HHCVRcjWaARIUtLBez51sWu6xzsUo")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -27,9 +27,9 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/31862d2013a79f1f48e
 NEWGRP = environ.get("NEWGRP", "https://graph.org/file/60e45238f767fc946c323.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5007198306').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5387783284 5007198306').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001782414786').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '5007198306').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '5387783284 5007198306').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
@@ -37,7 +37,7 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Darkdevil12:password1234@cluster0.qieo0l1.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://bothub517:password1234@cluster0.kpst8de.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cinemaa_boxofficeBot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
@@ -48,14 +48,14 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/Shazam_bot_support')
 MSG_ALRT = environ.get('MSG_ALRT', 'Share and Support Us')
 
 # Custom Chats
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001502366282))
-FILE_CHANNEL = int(environ.get('FILE_CHANNEL', -1001782414786))
-FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 't.me/cinemaa_boxoffice')
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001986583404))
+FILE_CHANNEL = int(environ.get('FILE_CHANNEL', -1001918572423))
+FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 't.me/+pT2ZG3xjywQ4NWU1')
 HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/Shazam_bot_support')
 
 # Log Channels
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001975890174))
-RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', -1001975890174))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001930661381))
+RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', -1001930661381))
 
 # Bot Options
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
