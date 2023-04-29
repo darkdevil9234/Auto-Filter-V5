@@ -11,7 +11,7 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
     ABOUT_TXT = """<b>✯ Mʏ Nᴀᴍᴇ : {}</b>
 
-<b>✯ Cʀᴇᴀᴛᴏʀ : <a href=https://t.me/Cinemaa_Boxoffice>☢ cinemaa_boxoffice ☢</a></b>
+<b>✯ Cʀᴇᴀᴛᴏʀ : <a href=https://t.me/Akash9605>☢ ⒶⓀⒶⓢⒽ🇮🇳ⒷⒽⒶⒾ࿐ ☢</a></b>
 
 <b>✯ Uᴘᴅᴀᴛᴇs : <a href=https://t.me/moviesworld738>cinemaa_boxoffice Updates 👾</a></b>
 
